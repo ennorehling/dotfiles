@@ -1,4 +1,4 @@
--export LANG=en_US.UTF-8
--export CHICKEN_PREFIX=$HOME/local
--export TOLUA_DIR=$HOME/local
--export LUA_DIR=$HOME/local
+export LANG=en_US.UTF-8
+export CHICKEN_PREFIX=$HOME/local
+export TOLUA_DIR=$HOME/local
+export LUA_DIR=$HOME/local
