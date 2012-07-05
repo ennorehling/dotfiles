@@ -304,3 +304,8 @@ define lua_mode_hook ()
 }
 
 variable Py_Indent_Level = 4;
+autoload ("haskell_mode", "/usr/share/jed/lib/haskellmode.sl");add_completion ("haskell_mode");Mode_List_Exts = strcat(Mode_List_Exts,",hs");Mode_List_Modes = strcat(Mode_List_Modes,",haskell");
+autoload ("haskell_mode", "/usr/share/jed/lib/haskellmode.sl");
+add_completion ("haskell_mode");
+Mode_List_Exts = strcat(Mode_List_Exts,",hs");
+Mode_List_Modes = strcat(Mode_List_Modes,",haskell");
