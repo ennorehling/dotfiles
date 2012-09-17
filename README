@@ -1,0 +1,4 @@
+rm -f .bashrc .jedrc
+ln -s config/bashrc .bashrc
+ln -s config/jedrc .jedrc
+ln -s config/bash_aliases .bash_aliases
