@@ -1,13 +1,17 @@
 StrictHostKeyChecking=no
 ForwardAgent yes
 
+Host home
+    User pi
+    HostName dmz.enno.linkpc.net
+
 Host hallon-1
     User pi
 
 Host hallon-2
     User pi
 
-Host gelbbaer
+Host eressea
     HostName gelbbaer.kn-bremen.de
     User eressea
 
