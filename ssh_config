@@ -1,1 +1,16 @@
 StrictHostKeyChecking=no
+ForwardAgent yes
+
+Host hallon-1
+    User pi
+
+Host hallon-2
+    User pi
+
+Host gelbbaer
+    HostName gelbbaer.kn-bremen.de
+    User eressea
+
+Host en.no.de
+    Port 18485
+    User node
