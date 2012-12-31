@@ -1,3 +1,1 @@
-alias ..='cd ..'
-alias ll='ls -l'
-alias dir='ls --color=auto -lah'
+alias ta='tmux attach || tmux'
