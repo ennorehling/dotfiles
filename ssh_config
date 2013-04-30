@@ -1,6 +1,10 @@
 StrictHostKeyChecking=no
 ForwardAgent yes
 
+Host ec2-eressea
+  User enno
+  HostName ec2-23-22-49-97.compute-1.amazonaws.com
+
 Host imvu-sandbox
 	User cit
   HostName 192.168.112.10
