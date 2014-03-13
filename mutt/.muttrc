@@ -1,0 +1,25 @@
+set imap_user = "enno.rehling@gmail.com"
+set smtp_url = "smtp://enno.rehling@smtp.gmail.com:587/"
+set from = "enno.rehling@gmail.com"
+set realname = "Enno Rehling"
+
+# Change the following line to a different editor you prefer.
+set editor = "jed"
+
+# Basic config, you can leave this as is
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set imap_check_subscribed
+set hostname = gmail.com
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "+[Gmail]/Drafts"
+#set record = "+[Gmail]/Sent Mail"
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+source "$HOME/.mutt/password.rc"
+source "$HOME/.mutt/gpg.rc"
+source "$HOME/.mutt/crypto.rc"

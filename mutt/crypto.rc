@@ -1,0 +1,34 @@
+message-hook '!(~g|~G) ~b"^-----BEGIN\ PGP\ (SIGNED\ )?MESSAGE"' "exec check-traditional-pgp"
+set pgp_use_gpg_agent = yes
+
+# This option causes Mutt to generate an old-style inline PGP
+# encrypted or signed message when replying to an old-style message, and
+# a PGP/MIME message when replying to a PGP/MIME message. 
+set pgp_auto_traditional = yes
+
+# it's a regexp used against the GPG output: if it matches some line of the
+# output then mutt considers the message a good signed one (ignoring the GPG
+# exit code) 
+set pgp_good_sign="^gpg: Good signature from"
+
+# specify the uid to use when encrypting/signing 
+set pgp_sign_as = 0x38713193
+
+# this set the number of seconds to keep in memory the passphrase used to encrypt/sign # the more the less secure it will be 
+set pgp_timeout = 3600
+
+# automatically sign all outgoing messages 
+set crypt_autosign = yes
+
+# automatically encrypt outgoing messages
+set crypt_autoencrypt = no
+
+# encrypt only replies to signed messages 
+set crypt_replyencrypt = yes
+
+# encrypt and sign replies to encrypted messages
+set crypt_replysignencrypted=yes
+
+# automatically verify the sign of a message when opened 
+set crypt_verify_sig=yes
+
