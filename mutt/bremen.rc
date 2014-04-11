@@ -1,0 +1,13 @@
+set hostname = gmail.com
+set imap_user = "enno"
+set smtp_url = "smtp://enno@mail.kn-bremen.de:587/"
+set from = "enno@twigtechnology.com"
+alternates "enno@eressea.de|enno@kn-bremen.de"
+set realname = "Enno Rehling"
+
+# Basic config, you can leave this as is
+set folder = "imaps://mail.kn-bremen.de:993"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set postponed = "+Drafts"
+set mbox = "+Archives"

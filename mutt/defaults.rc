@@ -1,0 +1,24 @@
+set ssl_starttls=yes
+set ssl_force_tls=yes
+unset imap_passive
+set header_cache=~/.mutt/hcache
+set message_cachedir=~/.mutt/mcache
+set reverse_name
+set send_charset="utf-8:iso-8859-1"
+set charset="utf-8"
+set certificate_file=~/.mutt/certificates
+set editor = "jed"
+unset imap_check_subscribed
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set move = no
+set copy = yes
+set postpone = ask-no
+set recall = ask-no
+set crypt_autosign
+
+macro compose v "<edit-from>^Uenno_at_<tab>" "Select from"
+macro index J "<save-message>=Junk<enter>"
+macro index A "<save-message>=Archives<enter>"
+

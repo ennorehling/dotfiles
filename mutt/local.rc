@@ -1,0 +1,20 @@
+set folder = "imap://enno@localhost"
+set spoolfile = "+INBOX"
+set imap_pass = "0redalert"
+set imap_user = "enno"
+set from = "enno@twigtechnology.com"
+set realname = "Enno Rehling"
+
+set smtp_url = "smtp://enno.rehling@smtp.gmail.com:587/"
+set smtp_pass = "srigzhocdopsosru"
+
+# Basic config, you can leave this as is
+set ssl_starttls = no
+set imap_check_subscribed
+set imap_list_subscribed
+#set hostname = gmail.com
+set mail_check = 60
+set timeout = 10
+set imap_keepalive = 300
+set postponed = "+Drafts"
+set record = "+Sent"

@@ -1,0 +1,7 @@
+alias enno_at_eressea Enno Rehling <enno@eressea.de>
+alias enno_at_twigtech Enno Rehling <enno@twigtechnology.com>
+alias enno_at_gmail Enno Rehling <enno@gmail.com>
+alias enno_at_knbremen Enno Rehling <enno@kn-bremen.de>
+
+send-hook "~t eressea-design" "set from='Enno Rehling <enno@eressea.de>'"
+send-hook "~t eressea\.de" "set from='Enno Rehling <enno@eressea.de>'"
