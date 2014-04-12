@@ -1,4 +1,5 @@
-autoload( "lua_mode", "lua" );
+require("keydefs");
+autoload("lua_mode", "lua");
 
 WRAP_INDENTS = 1;
 USE_TABS = 0;
@@ -16,18 +17,18 @@ CASE_SEARCH     = 1;    % zero turns off case sensitivity for
 set_color_scheme ("black3");
 
 if (BATCH == 0) {
-    setkey("bol",                "\e[1~");       % home
-    setkey("toggle_overwrite",   "\e[2~");       % insert
-    setkey("delete_char_cmd",    "\e[3~");       % delete
-    setkey("eol",                "\e[4~");       % end
-    setkey("ide_skip_word",      "\e[C");
-    setkey("ide_bskip_word",     "\e[D");
-    setkey("backward_paragraph", "\e[A");
-    setkey("forward_paragraph",  "\e[B");
-    setkey("bob", "\x1b\x5b\x35\x3b\x35\x7e");       % Ctrl-Pgup
-    setkey("eob", "\x1b\x5b\x36\x3b\x35\x7e");       % Ctrl-Pgdn
     () = evalfile("emacs");           % Emacs-like bindings
     enable_menu_keys ();
+    setkey("toggle_overwrite",   Key_Ins);       % insert
+    setkey("delete_char_cmd",    Key_Del);       % delete
+    setkey("bol", Key_Home);       % home
+    setkey("eol", Key_End);        % end
+    setkey("ide_skip_word",      Key_Shift_Right);
+    setkey("ide_bskip_word",     Key_Shift_Left);
+    setkey("backward_paragraph", Key_Shift_Up);
+    setkey("forward_paragraph",  Key_Shift_Down);
+    setkey("bob", "\x1b\x5b\x35\x3b\x35\x7e");       % Ctrl-Pgup
+    setkey("eob", "\x1b\x5b\x36\x3b\x35\x7e");       % Ctrl-Pgdn
 }
 
 define load_local_config()
