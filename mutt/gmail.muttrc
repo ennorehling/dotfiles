@@ -2,3 +2,4 @@ source ~/.mutt/defaults.rc
 source ~/.mutt/gmail.pass
 source ~/.mutt/gmail.rc
 source ~/.mutt/identity.rc
+source ~/.mutt/gnupg.rc

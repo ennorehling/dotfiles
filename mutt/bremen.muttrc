@@ -2,3 +2,4 @@ source ~/.mutt/defaults.rc
 source ~/.mutt/bremen.pass
 source ~/.mutt/bremen.rc
 source ~/.mutt/identity.rc
+source ~/.mutt/gnupg.rc
