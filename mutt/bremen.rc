@@ -1,4 +1,4 @@
-set hostname = gmail.com
+set hostname = kn-bremen.de
 set imap_user = "enno"
 set smtp_url = "smtp://enno@mail.kn-bremen.de:587/"
 set from = "enno@twigtechnology.com"
