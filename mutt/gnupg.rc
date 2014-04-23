@@ -15,3 +15,5 @@ set pgp_sign_as=0x38713193
 set pgp_replyencrypt=yes
 set pgp_timeout=1800
 set pgp_good_sign="^gpg: Good signature from"
+
+send-hook '~t cynthia' 'set pgp_autoinline = yes ; set pgp_mime_auto = ask-yes'
