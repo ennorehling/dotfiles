@@ -3,3 +3,4 @@ source ~/.mutt/gmail.pass
 source ~/.mutt/gmail.rc
 source ~/.mutt/identity.rc
 source ~/.mutt/gnupg.rc
+alias htf-volunteers HTF Volunteers <htf-volunteers@googlegroups.com>

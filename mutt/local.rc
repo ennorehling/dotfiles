@@ -2,7 +2,7 @@ set folder = "imap://enno@localhost"
 set spoolfile = "+INBOX"
 set imap_pass = "0redalert"
 set imap_user = "enno"
-set from = "enno@twigtechnology.com"
+set from = "enno@kn-bremen.de"
 set realname = "Enno Rehling"
 
 set smtp_url = "smtp://enno.rehling@smtp.gmail.com:587/"

@@ -3,9 +3,11 @@ alias enno_at_twigtech Enno Rehling <enno@twigtechnology.com>
 alias enno_at_gmail Enno Rehling <enno@gmail.com>
 alias enno_at_knbremen Enno Rehling <enno@kn-bremen.de>
 
+# Eressea
 send-hook "~t jan.thaler" "set from='Enno Rehling <enno@eressea.de>'"
 send-hook "~t eressea" "set from='Enno Rehling <enno@eressea.de>'"
 send-hook "~t atlantis" "set from='Enno Rehling <enno@eressea.de>'"
 send-hook "~t pbem" "set from='Enno Rehling <enno@eressea.de>'"
-# send-hook "~t eressea-design" "set from='Enno Rehling <enno@eressea.de>'"
-# send-hook "~t eressea\.de" "set from='Enno Rehling <enno@eressea.de>'"
+
+# Personal
+send-hook "~t imvu" "set from='Enno Rehling <enno@kn-bremen.de>"
