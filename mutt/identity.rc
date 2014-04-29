@@ -12,3 +12,10 @@ send-hook "~t 'eressea|atlantis|pbem'" "set from='Enno Rehling <enno@eressea.de>
 send-hook "~t imvu" "set from='Enno Rehling <enno@kn-bremen.de>"
 
 folder-hook "Eressea" "set from='Enno Rehling <enno@eressea.de>'"
+
+subscribe eressea-design
+subscribe eressea-dev
+subscribe atlantisdev
+subscribe eressea-annnounce
+subscribe htf-volunteers
+subscribe olympia_pbem
