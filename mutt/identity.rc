@@ -5,9 +5,10 @@ alias enno_at_knbremen Enno Rehling <enno@kn-bremen.de>
 
 # Eressea
 send-hook "~t jan.thaler" "set from='Enno Rehling <enno@eressea.de>'"
-send-hook "~t eressea" "set from='Enno Rehling <enno@eressea.de>'"
-send-hook "~t atlantis" "set from='Enno Rehling <enno@eressea.de>'"
-send-hook "~t pbem" "set from='Enno Rehling <enno@eressea.de>'"
+send-hook "~t 'akoenigs|freisturz|thaler|stm'" "set from='Enno Rehling <enno@eressea.de>'"
+send-hook "~t 'eressea|atlantis|pbem'" "set from='Enno Rehling <enno@eressea.de>'"
 
 # Personal
 send-hook "~t imvu" "set from='Enno Rehling <enno@kn-bremen.de>"
+
+folder-hook "Eressea" "set from='Enno Rehling <enno@eressea.de>'"
