@@ -17,7 +17,7 @@ CASE_SEARCH     = 1;    % zero turns off case sensitivity for
 set_color_scheme ("black3");
 
 if (BATCH == 0) {
-    () = evalfile("emacs");           % Emacs-like bindings
+    () = evalfile("emacs");
     enable_menu_keys ();
     setkey("toggle_overwrite",   Key_Ins);       % insert
     setkey("delete_char_cmd",    Key_Del);       % delete
