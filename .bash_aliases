@@ -12,3 +12,8 @@ if [ -d ~/eressea ]; then
   alias e4='cd ~/eressea/game-4'
 fi
                         
+if [ -x /opt/bin/luarocks ]; then
+  eval `/opt/bin/luarocks path`
+fi
+LUA_PATH="$LUA_PATH;./?/init.lua"
+  
