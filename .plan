@@ -19,3 +19,6 @@ To Do:
 . other handlers besides nrmessage() to render localization
 . register_function/get_function to support Lua callbacks
 . msg_message deals poorly with missing messages
+. eliminate new_race[] array
+. eliminate RCF_*GOLEM flags
+. why is appearence not in item_type ?
