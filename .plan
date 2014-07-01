@@ -5,20 +5,25 @@ install lunit and write unit tests for atlantis
 Done:
 . killing it_find / rewrite with rt_find
 . jsonconf reads items
+. new_resourcetype is awful
+. eliminate new_itemtype()
+. rt_get_or_create must rt_register! (test.test.c)
+. why is appearence not in item_type ?
+. eliminate new_race[] array
+. kill static variables (^\s+static)
+. optimize get_race()
+. strings in jsonconf
+. it_create replaces new_itemtype
 
 To Do:
 . jsonconf race.speed
 . get_param_* cache breaking
-. it_create replaces new_itemtype
 . jsonconf reads items with attributes
 . replace rt_find with get_resourcetype where we can
-. kill static variables (^\s+static)
 . kill superfluous R_* enums
-. strings in jsonconf
 . invert RCF_WALK, it is a shitty default
 . other handlers besides nrmessage() to render localization
 . register_function/get_function to support Lua callbacks
 . msg_message deals poorly with missing messages
-. eliminate new_race[] array
 . eliminate RCF_*GOLEM flags
-. why is appearence not in item_type ?
+. requirement.recycle is stupid hard
