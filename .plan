@@ -27,3 +27,5 @@ To Do:
 . msg_message deals poorly with missing messages
 . eliminate RCF_*GOLEM flags
 . requirement.recycle is stupid hard
+. set rules with -r
+. test eressea installation uses correct rules, eressea.ini cleanup
