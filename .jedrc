@@ -1,6 +1,7 @@
 require("keydefs");
 autoload("lua_mode", "lua");
 
+No_Backups = 1;
 WRAP_INDENTS = 1;
 USE_TABS = 0;
 TAB_DEFAULT = 4;
@@ -22,6 +23,7 @@ if (BATCH == 0) {
     enable_menu_keys ();
     setkey("toggle_overwrite",   Key_Ins);       % insert
     setkey("delete_char_cmd",    Key_Del);       % delete
+    setkey("compile", Key_F7);
     setkey("bol", Key_Home);       % home
     setkey("eol", Key_End);        % end
     setkey("ide_skip_word",      Key_Shift_Right);
