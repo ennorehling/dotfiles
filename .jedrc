@@ -9,6 +9,7 @@ C_BRA_NEWLINE = 0;
 C_CONTINUED_OFFSET = 4;
 C_BRACE = 0;
 C_Colon_Offset = 0;
+No_Backups = 1;         % If non-zero, backup files will not be created.
 BLINK           = 1;    % if non zero, blink matching parenthesis
 WRAP            = 78;   % wrap column
 ADD_NEWLINE     = 1;    % add newline to file when writing if one not present
