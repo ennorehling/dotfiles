@@ -27,3 +27,6 @@ To Do:
 . msg_message deals poorly with missing messages
 . eliminate RCF_*GOLEM flags
 . requirement.recycle is stupid hard
+
+Wayland Desktop on Pi
+. http://wayland.freedesktop.org/xserver.html
