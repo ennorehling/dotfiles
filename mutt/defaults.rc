@@ -23,3 +23,6 @@ macro index J "<save-message>=Junk<enter>"
 macro index A "<save-message>=Archives<enter>"
 
 source ~/.mutt/aliases.rc
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
