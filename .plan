@@ -26,3 +26,11 @@ To Do:
 . other handlers besides nrmessage() to render localization
 . register_function/get_function to support Lua callbacks
 . msg_message deals poorly with missing messages
+. eliminate RCF_*GOLEM flags
+. requirement.recycle is stupid hard
+. set rules with -r
+. test eressea installation uses correct rules, eressea.ini cleanup
+
+
+Wayland Desktop on Pi
+. http://wayland.freedesktop.org/xserver.html

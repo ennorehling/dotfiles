@@ -3,6 +3,7 @@ alias ..='cd ..'
 alias ll='ls -l'
 alias dir='ls --color=auto -lah'
 #umask 0077
+PATH=/sbin:$PATH
 [ -d /usr/lib/mutt/ ] && PATH=/usr/lib/mutt/:$PATH
 [ -d /opt/bin/ ] && PATH=/opt/bin/:$PATH
 [ -d $HOME/bin/ ] && PATH=$HOME/bin/:$PATH
@@ -16,3 +17,9 @@ if [ -x /opt/bin/luarocks ]; then
   eval `/opt/bin/luarocks path`
 fi
 LUA_PATH="$LUA_PATH;./?/init.lua"
+
+__git_ps1()
+{
+    echo " "
+}
+

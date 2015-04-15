@@ -11,6 +11,7 @@ C_BRA_NEWLINE = 0;
 C_CONTINUED_OFFSET = 4;
 C_BRACE = 0;
 C_Colon_Offset = 0;
+No_Backups = 1;         % If non-zero, backup files will not be created.
 BLINK           = 1;    % if non zero, blink matching parenthesis
 WRAP            = 78;   % wrap column
 ADD_NEWLINE     = 1;    % add newline to file when writing if one not present
@@ -23,6 +24,7 @@ if (BATCH == 0) {
     enable_menu_keys ();
     setkey("toggle_overwrite",   Key_Ins);       % insert
     setkey("delete_char_cmd",    Key_Del);       % delete
+    setkey("compile", Key_F7);
     setkey("bol", Key_Home);       % home
     setkey("eol", Key_End);        % end
     setkey("ide_skip_word",      Key_Shift_Right);
