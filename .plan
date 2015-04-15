@@ -14,6 +14,7 @@ Done:
 . optimize get_race()
 . strings in jsonconf
 . it_create replaces new_itemtype
+. requirement.recycle is stupid, never used
 
 To Do:
 . jsonconf race.speed
@@ -25,5 +26,3 @@ To Do:
 . other handlers besides nrmessage() to render localization
 . register_function/get_function to support Lua callbacks
 . msg_message deals poorly with missing messages
-. eliminate RCF_*GOLEM flags
-. requirement.recycle is stupid hard
