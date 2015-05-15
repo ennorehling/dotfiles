@@ -1,6 +1,7 @@
 require("keydefs");
 autoload("lua_mode", "lua");
 
+LINENUMBERS = 2;
 No_Backups = 1;
 WRAP_INDENTS = 1;
 USE_TABS = 0;
@@ -21,6 +22,7 @@ set_color_scheme ("black3");
 if (BATCH == 0) {
     () = evalfile("emacs");
     enable_menu_keys ();
+    setkey("toggle_line_number_mode", Key_F8);
     setkey("toggle_overwrite",   Key_Ins);       % insert
     setkey("delete_char_cmd",    Key_Del);       % delete
     setkey("compile", Key_F7);
@@ -86,4 +88,9 @@ define ide_skip_word ()                 % Alt+Right
         skip_chars (Ide_Skippable_Chars);
         skip_chars ("^" + Ide_Skippable_Chars);
     }
+}
+
+define global_mode_hook (mode)
+{
+    set_line_number_mode(1);
 }
