@@ -14,6 +14,7 @@ Done:
 . optimize get_race()
 . strings in jsonconf
 . it_create replaces new_itemtype
+. requirement.recycle is stupid, never used
 
 To Do:
 . jsonconf race.speed

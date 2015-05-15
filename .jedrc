@@ -3,6 +3,7 @@ autoload("lua_mode", "lua");
 
 LINENUMBERS = 2;
 No_Backups = 1;
+LINENUMBERS = 2;
 WRAP_INDENTS = 1;
 USE_TABS = 0;
 TAB_DEFAULT = 4;

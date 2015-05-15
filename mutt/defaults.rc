@@ -1,3 +1,4 @@
+auto_view text/html
 set ssl_starttls=yes
 set ssl_force_tls=yes
 unset imap_passive
