@@ -22,8 +22,8 @@ LUA_PATH="$LUA_PATH;./?/init.lua"
 
 for source in \
 /etc/bash_completion.d/git \
-/etc/bash_completion.d/git-sh-prompt
+/etc/bash_completion.d/git-prompt
 do
-  [ -e $prompt ] && . $source && break
+  [ -e $source ] && . $source && break
 done
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]$(__git_ps1 '@%s')\$ '
