@@ -1,3 +1,4 @@
+alias sudo='sudo -E'
 alias ta='tmux attach || tmux'
 alias ..='cd ..'
 alias ll='ls -l'

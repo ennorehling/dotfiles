@@ -95,3 +95,34 @@ define global_mode_hook (mode)
 {
     set_line_number_mode(1);
 }
+
+%
+% Switch to previous or next buffer.
+%   This code taken from ide_next_buffer() in ide.sl.
+%
+define next_buffer (previous)
+{
+    variable n, buf;
+    n = buffer_list (); % get the buffers on the stack
+    if (previous)
+    {
+        _stk_reverse (n-1);
+    }
+    loop (n) {
+        buf = ();
+        n--;
+        % Skip *scratch* and other buffers that are not of interest.
+        if ((buf[0] == '*') or (buf[0] == ' '))
+        {
+            continue;
+        }
+        sw2buf (buf);
+        _pop_n (n);
+        return;
+    }
+}
+
+% Bind Alt-. and Alt-, (Meta-period and Meta-comma) to next_buffer().
+setkey ("next_buffer (0)", "\e,");
+setkey ("next_buffer (1)", "\e.");
+
