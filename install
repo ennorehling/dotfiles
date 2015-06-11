@@ -1,5 +1,6 @@
 set -e
 cd ~
+install dotfiles/.gitconfig .
 ln -sf dotfiles/.bash_* .
 ln -sf dotfiles/.gdbinit
 ln -sf dotfiles/.tmux.conf
@@ -12,4 +13,3 @@ ln -sf ../dotfiles/mutt/* .
 ln -sf dotfiles/.bash_profile
 cd ../.ssh
 ln -sf ../dotfiles/.ssh/* .
-
