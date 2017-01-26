@@ -1,3 +1,9 @@
 [user]
 	name = Enno Rehling
 	email = enno.rehling@gmail.com
+[pull]
+	rebase = true
+[merge]
+	ff = false
+[color]
+	ui = true
