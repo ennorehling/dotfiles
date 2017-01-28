@@ -2,10 +2,11 @@ set -e
 cd ~
 install dotfiles/.gitconfig .
 ln -sf dotfiles/.bash_* .
-ln -sf dotfiles/.gdbinit
-ln -sf dotfiles/.tmux.conf
-ln -sf dotfiles/.jedrc
+ln -s dotfiles/.gdbinit
+ln -s dotfiles/.tmux.conf
+ln -s dotfiles/.jedrc
 ln -sf dotfiles/.plan
+ln -s dotfiles/.vimrc
 mkdir .mutt
 cd .mutt
 ln -sf .mutt/bremen.muttrc .muttrc
