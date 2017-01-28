@@ -1,2 +1,5 @@
+mutt/mcache/
+mutt/hcache
 *~
 password.rc
+*.pass

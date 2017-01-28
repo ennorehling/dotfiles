@@ -8,7 +8,6 @@ set reverse_name
 set send_charset="utf-8:iso-8859-1"
 set charset="utf-8"
 set certificate_file=~/.mutt/certificates
-set editor = "jed"
 unset imap_check_subscribed
 set mail_check = 120
 set timeout = 300
