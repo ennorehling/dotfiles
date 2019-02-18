@@ -11,6 +11,17 @@ PATH=/sbin:$PATH
 [ -d /usr/lib/mutt/ ] && PATH=/usr/lib/mutt/:$PATH
 [ -d /opt/bin/ ] && PATH=/opt/bin/:$PATH
 [ -d $HOME/bin/ ] && PATH=$HOME/bin/:$PATH
+if [ -d ~/eressea ]; then
+  alias e2='cd ~/eressea/game-2'
+  alias e3='cd ~/eressea/game-3'
+  alias e4='cd ~/eressea/game-4'
+  alias eg='cd ~/eressea/git'
+fi
+
+if [ -x /opt/bin/luarocks ]; then
+  eval `/opt/bin/luarocks path`
+fi
+LUA_PATH="$LUA_PATH;./?/init.lua"
 
 for source in \
 /etc/bash_completion.d/git \
@@ -19,4 +30,6 @@ do
   [ -e $source ] && . $source && break
 done
 # PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+PATH="$PATH:~/.composer/vendor/bin"
+export LC_ALL=$LANG
 
