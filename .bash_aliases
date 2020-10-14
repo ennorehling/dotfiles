@@ -33,4 +33,6 @@ done
 # PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 PATH="$PATH:~/.composer/vendor/bin"
 export LC_ALL=$LANG
+export EDITOR=vim
+export VISUAL=vim
 
