@@ -1,30 +1,24 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-syntax on
+set nocompatible
 set number
-set cindent
-set laststatus=2
-set textwidth=72
-set formatoptions=cqt
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
 
-" more Plugin commands
-" ...
-Plugin 'editorconfig/editorconfig-vim'
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#begin('~/.vim/plugged')
+" More Plugins here
+Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'luochen1990/rainbow'
+Plug 'altercation/vim-colors-solarized'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-  autocmd BufEnter * match OverLength /\%74v.*/
-augroup END
+call plug#end()
+syntax enable
+set background=dark
+"colorscheme solarized
+color elflord
 
