@@ -14,9 +14,13 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'luochen1990/rainbow'
 Plug 'altercation/vim-colors-solarized'
-
-
+Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
 call plug#end()
+
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 syntax enable
 set background=dark
 "colorscheme solarized
