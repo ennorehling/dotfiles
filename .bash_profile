@@ -1,8 +1,5 @@
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
-fi
-echo
-[ -d /usr/share/games/fortunes ] && fortune
+[ -f ~/.bashrc ] && source ~/.bashrc
+[ -d /usr/share/games/fortunes ] && fortune 
 TZ='Europe/Oslo'; export TZ
 NCURSES_NO_UTF8_ACS=1; export NCURSES_NO_UTF8_ACS
 if [ -f ~/.profile ]; then

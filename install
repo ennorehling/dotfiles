@@ -16,6 +16,6 @@ cd .mutt
 ln -sf .mutt/bremen.muttrc .muttrc
 ln -sf ../dotfiles/mutt/* .
 ln -sf dotfiles/.bash_profile
-mkdir -p ../.ssh
-cd ../.ssh
+mkdir -p ~/.ssh
+cd ~/.ssh
 ln -sf ../dotfiles/.ssh/* .

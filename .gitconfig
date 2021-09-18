@@ -7,3 +7,10 @@
 	ff = false
 [color]
 	ui = true
+[alias]
+        cp = cherry-pick
+        co = checkout
+        ci = commit
+        st = status
+        br = branch
+        me = merge
