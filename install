@@ -2,7 +2,6 @@
 set -e
 cd ~
 cd dotfiles
-git submodule update
 install dotfiles/.gitconfig .
 ln -sf dotfiles/.bash_* .
 ln -s dotfiles/.gdbinit
