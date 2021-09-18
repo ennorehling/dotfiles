@@ -1,20 +1,20 @@
-#!/bin/sh
-set -e
-cd ~
-cd dotfiles
-install dotfiles/.gitconfig .
-ln -sf dotfiles/.bash_* .
-ln -s dotfiles/.gdbinit
-ln -s dotfiles/.tmux.conf
-ln -s dotfiles/.jedrc
-ln -sf dotfiles/.plan
-ln -s dotfiles/.vimrc
-ln -s dotfiles/.vim
-mkdir .mutt
-cd .mutt
+#!/bin/bash
+set -ex
+REALPATH=$(realpath "$0" --relative-to="$HOME")
+DIRNAME=$(dirname "$REALPATH")
+
+pushd ~
+for file in .gitconfig .jedrc .plan .vimrc .tmux.conf .gdbinit ; do
+	ln -sf "$DIRNAME/$file" .
+done
+ln -sf $DIRNAME/.bash_* .
+
+mkdir -p .mutt
 ln -sf .mutt/bremen.muttrc .muttrc
-ln -sf ../dotfiles/mutt/* .
-ln -sf dotfiles/.bash_profile
+cd ~/.mutt
+ln -sf ../$DIRNAME/mutt/* .
+
 mkdir -p ~/.ssh
 cd ~/.ssh
-ln -sf ../dotfiles/.ssh/* .
+ln -sf ../$DIRNAME/.ssh/* .
+popd
