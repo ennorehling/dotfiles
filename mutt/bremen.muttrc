@@ -1,3 +1,4 @@
+source ~/.mutt/mutt-colors-solarized-dark-256.muttrc
 source ~/.mutt/defaults.rc
 source ~/.mutt/bremen.pass
 source ~/.mutt/bremen.rc

@@ -16,7 +16,7 @@ set move = no
 set copy = yes
 set postpone = ask-no
 set recall = ask-no
-set crypt_autosign
+#set crypt_autosign
 
 macro compose v "<edit-from>^Uenno_at_<tab>" "Select from"
 macro index J "<save-message>=Junk<enter>"

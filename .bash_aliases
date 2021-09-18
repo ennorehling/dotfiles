@@ -1,4 +1,4 @@
-alias sudo='sudo -E'
+#alias sudo='sudo -E'
 alias ta='tmux attach || tmux'
 alias ..='cd ..'
 alias ll='ls -l'
@@ -28,3 +28,5 @@ do
 done
 PS1='\[\033]0;\u@\h: \w\007\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]$(__git_ps1 '@%s')\$ '
 # PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
