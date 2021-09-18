@@ -1,9 +1,9 @@
 #!/bin/bash
-set -ex
+set -e
 REALPATH=$(realpath "$0" --relative-to="$HOME")
 DIRNAME=$(dirname "$REALPATH")
 
-pushd ~
+pushd ~ > /dev/null
 for file in .gitconfig .jedrc .plan .vimrc .tmux.conf .gdbinit ; do
 	ln -sf "$DIRNAME/$file" .
 done
@@ -17,4 +17,5 @@ ln -sf ../$DIRNAME/mutt/* .
 mkdir -p ~/.ssh
 cd ~/.ssh
 ln -sf ../$DIRNAME/.ssh/* .
-popd
+popd > /dev/null
+
