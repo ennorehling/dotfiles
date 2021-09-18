@@ -18,11 +18,9 @@ fi
 if [ -d "/opt/bin" ] ; then
     PATH="/opt/bin:$PATH"
 fi
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+PATH="/opt/bin:$PATH"
+PATH="/opt/coverity/bin:$PATH"
+PATH="/opt/letsencrypt/bin:$PATH"
+PATH="$HOME/bin:$PATH"
+export PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-export NVM_DIR="/home/enno/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

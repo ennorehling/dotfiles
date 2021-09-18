@@ -1,5 +1,8 @@
+#!/bin/sh
 set -e
 cd ~
+cd dotfiles
+git submodule update
 install dotfiles/.gitconfig .
 ln -sf dotfiles/.bash_* .
 ln -s dotfiles/.gdbinit
@@ -7,10 +10,12 @@ ln -s dotfiles/.tmux.conf
 ln -s dotfiles/.jedrc
 ln -sf dotfiles/.plan
 ln -s dotfiles/.vimrc
+ln -s dotfiles/.vim
 mkdir .mutt
 cd .mutt
 ln -sf .mutt/bremen.muttrc .muttrc
 ln -sf ../dotfiles/mutt/* .
 ln -sf dotfiles/.bash_profile
+mkdir -p ../.ssh
 cd ../.ssh
 ln -sf ../dotfiles/.ssh/* .
