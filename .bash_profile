@@ -1,5 +1,4 @@
 [ -f ~/.bashrc ] && source ~/.bashrc
-[ -d /usr/share/games/fortunes ] && fortune 
 TZ='Europe/Oslo'; export TZ
 NCURSES_NO_UTF8_ACS=1; export NCURSES_NO_UTF8_ACS
 if [ -f ~/.profile ]; then
@@ -18,4 +17,6 @@ PATH="/opt/coverity/bin:$PATH"
 PATH="/opt/letsencrypt/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 export PATH
+echo ""
+[ -d /usr/share/games/fortunes ] && /usr/games/fortune 
 
