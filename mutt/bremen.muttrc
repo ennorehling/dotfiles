@@ -4,6 +4,7 @@ source ~/.mutt/bremen.pass
 source ~/.mutt/bremen.rc
 source ~/.mutt/identity.rc
 source ~/.mutt/gnupg.rc
+set charset="UTF-8"
 
 save-hook "~t eressea" +Eressea
 save-hook "~s eressea" +Eressea
