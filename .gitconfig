@@ -14,3 +14,5 @@
         st = status
         br = branch
         me = merge
+[init]
+	defaultBranch = master
