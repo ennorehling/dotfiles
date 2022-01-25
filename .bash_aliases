@@ -45,3 +45,5 @@ else
 	# macOS uses another variable and sytax.
 	export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 fi
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
