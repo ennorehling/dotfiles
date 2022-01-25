@@ -4,7 +4,7 @@ REALPATH=$(realpath "$0" --relative-to="$HOME")
 DIRNAME=$(dirname "$REALPATH")
 
 pushd ~ > /dev/null
-for file in .gitconfig .jedrc .plan .vimrc .tmux.conf .gdbinit ; do
+for file in .dircolors .gitconfig .jedrc .plan .vimrc .tmux.conf .gdbinit ; do
 	ln -sf "$DIRNAME/$file" .
 done
 ln -sf $DIRNAME/.bash_* .
