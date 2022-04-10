@@ -12,6 +12,7 @@
         co = checkout
         ci = commit
         st = status
+        sm = submodule
         br = branch
         me = merge
 [init]

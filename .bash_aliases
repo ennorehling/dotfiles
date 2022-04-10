@@ -40,7 +40,7 @@ fi
 
 export CLICOLOR=1
 if which dircolors >/dev/null; then
-	eval $(dircolors -b .dircolors)
+	eval $(dircolors -b ~/.dircolors)
 else
 	# macOS uses another variable and sytax.
 	export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
