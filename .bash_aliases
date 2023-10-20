@@ -1,3 +1,4 @@
+alias systemctl='systemctl -l --no-pager'
 alias ta='tmux attach || tmux'
 alias ..='cd ..'
 alias ll='ls -l'
@@ -42,7 +43,9 @@ fi
 
 export CLICOLOR=1
 if which dircolors >/dev/null; then
+	if [ -e ~/.dircolors ]; then
 	eval $(dircolors -b ~/.dircolors)
+	fi
 else
 	# macOS uses another variable and sytax.
 	export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
