@@ -13,7 +13,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'luochen1990/rainbow'
-Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 call plug#end()
@@ -23,6 +22,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 syntax enable
 set background=dark
-"colorscheme solarized
-color elflord
+color delek 
 

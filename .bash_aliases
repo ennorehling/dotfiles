@@ -2,6 +2,8 @@ alias ta='tmux attach || tmux'
 alias ..='cd ..'
 alias ll='ls -l'
 alias dir='ls -lAh'
+
+eval `keychain --eval --agents ssh`
 #umask 0077
 PATH=/sbin:$PATH
 [ -d /usr/lib/mutt/ ] && PATH=/usr/lib/mutt/:$PATH
