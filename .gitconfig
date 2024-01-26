@@ -3,8 +3,6 @@
 	email = enno.rehling@gmail.com
 [pull]
 	rebase = true
-[merge]
-	ff = false
 [color]
 	ui = true
 [alias]
@@ -15,5 +13,6 @@
         sm = submodule
         br = branch
         me = merge
+	sm = submodule
 [init]
 	defaultBranch = master
