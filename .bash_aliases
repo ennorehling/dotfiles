@@ -3,14 +3,19 @@ alias ta='tmux attach || tmux'
 alias mc='mc -X -u'
 alias ..='cd ..'
 alias ll='ls -l'
-alias dir='ls -lAh'
+alias dir='ls --color=auto -lAh'
+alias push-staging='git br -d develop && git co -b develop && git push -f -u origin develop'
+umask 0077
 
 eval `keychain --eval --agents ssh`
 #umask 0077
 PATH=/sbin:$PATH
-[ -d /usr/lib/mutt ] && PATH=/usr/lib/mutt:$PATH
-[ -d /opt/bin ] && PATH=/opt/bin:$PATH
-[ -d $HOME/bin ] && PATH=$HOME/bin:$PATH
+[ -d /usr/lib/mutt/ ] && PATH=/usr/lib/mutt/:$PATH
+[ -d /opt/bin/ ] && PATH=/opt/bin/:$PATH
+[ -d $HOME/bin/ ] && PATH=$HOME/bin/:$PATH
+[ -d $HOME/.config/composer/vendor/bin ] && \
+	PATH=$HOME/.config/composer/vendor/bin:$PATH
+[ -d $HOME/.local/bin ] && PATH=$HOME/.local/bin/:$PATH
 if [ -d ~/eressea ]; then
   alias e2='cd ~/eressea/game-2'
   alias e3='cd ~/eressea/game-3'
@@ -18,10 +23,16 @@ if [ -d ~/eressea ]; then
   alias eg='cd ~/eressea/git'
 fi
 
-#if [ -d ~/.luarocks ]; then
-#  eval `luarocks path`
-#fi
-#export LUA_PATH="$LUA_PATH;./?/init.lua"
+if [ -d ~/.composer/vendor/bin ]
+then
+  PATH=/.composer/vendor/bin:$PATH
+elif [ -d  ~/.config/composer/vendor/bin ]
+then
+  PATH=~/.config/composer/vendor/bin:$PATH
+fi
+alias tinker='php artisan tinker'
+
+eval `luarocks path`
 
 for source in \
 /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash \
@@ -36,10 +47,7 @@ PS1='\[\033]0;\u@\h: \w\007\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u
   export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 [ -d ~/.venv/bin ] && \
   export PATH="$HOME/.venv/bin:$PATH"
-export CDPATH=$HOME/work
 export LESS="IFRSXx4"
-export EDITOR=vim
-export VISUAL=vim
 export NCURSES_NO_UTF8_ACS=1
 if [ -d ~/eressea ]; then
   export ERESSEA_DIR=$HOME/eressea/git
@@ -57,3 +65,11 @@ else
 fi
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
+
+#in .bash_profile:
+#export EDITOR=vim
+#export VISUAL=vim
+alias ca="cd ~/Sites/admin"
+alias cl="cd ~/Sites/api"
+alias pa="php artisan"
+

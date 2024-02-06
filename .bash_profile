@@ -19,4 +19,5 @@ PATH="$HOME/bin:$PATH"
 export PATH
 echo ""
 [ -d /usr/share/games/fortunes ] && /usr/games/fortune 
-
+export EDITOR=vim
+export VISUAL=vim
