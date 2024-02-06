@@ -7,8 +7,6 @@ alias dir='ls --color=auto -lAh'
 alias push-staging='git br -d develop && git co -b develop && git push -f -u origin develop'
 umask 0077
 
-eval `keychain --eval --agents ssh`
-#umask 0077
 PATH=/sbin:$PATH
 [ -d /usr/lib/mutt/ ] && PATH=/usr/lib/mutt/:$PATH
 [ -d /opt/bin/ ] && PATH=/opt/bin/:$PATH
