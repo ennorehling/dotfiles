@@ -4,7 +4,7 @@ alias mc='mc -X -u'
 alias ..='cd ..'
 alias ll='ls -l'
 alias dir='ls --color=auto -lAh'
-alias push-staging='git br -d develop && git co -b develop && git push -f -u origin develop'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 umask 0077
 
 PATH=/sbin:$PATH
@@ -50,7 +50,6 @@ export NCURSES_NO_UTF8_ACS=1
 if [ -d ~/eressea ]; then
   export ERESSEA_DIR=$HOME/eressea/git
 fi
-eval `keychain --eval --agents ssh`
 
 export CLICOLOR=1
 if which dircolors >/dev/null; then
