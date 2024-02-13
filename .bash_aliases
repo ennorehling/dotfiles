@@ -30,7 +30,9 @@ then
 fi
 alias tinker='php artisan tinker'
 
-eval `luarocks path`
+if [ -d ~/.luarocks ]; then
+  eval `luarocks path`
+fi
 
 for source in \
 /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash \

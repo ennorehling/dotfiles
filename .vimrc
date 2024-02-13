@@ -22,4 +22,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 syntax enable
 set background=dark
 color delek 
+set autoindent expandtab tabstop=4 shiftwidth=4
 
