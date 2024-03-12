@@ -15,4 +15,12 @@
         me = merge
 	sm = submodule
 [init]
-	defaultBranch = master
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[help]
+	autoCorrect = prompt
+[branch]
+	sort = -committerdate
+[fetch]
+	prune = true
