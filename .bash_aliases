@@ -5,6 +5,7 @@ alias ..='cd ..'
 alias ll='ls -l'
 alias dir='ls --color=auto -lAh'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias tinker='php artisan tinker'
 umask 0077
 
 PATH=/sbin:$PATH
@@ -28,8 +29,10 @@ elif [ -d  ~/.config/composer/vendor/bin ]
 then
   PATH=~/.config/composer/vendor/bin:$PATH
 fi
-alias tinker='php artisan tinker'
-
+if [ -d /usr/local/opt/coreutils/libexec/gnubin ]; then
+  PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+fi
+  
 if [ -d ~/.luarocks ]; then
   eval `luarocks path`
 fi
@@ -56,7 +59,7 @@ fi
 export CLICOLOR=1
 if which dircolors >/dev/null; then
 	if [ -e ~/.dircolors ]; then
-	eval $(dircolors -b ~/.dircolors)
+        eval $(dircolors -b ~/.dircolors)
 	fi
 else
 	# macOS uses another variable and sytax.

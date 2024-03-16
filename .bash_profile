@@ -6,16 +6,12 @@ if [ -f ~/.profile ]; then
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "/opt/bin" ] ; then
-    PATH="/opt/bin:$PATH"
-fi
-PATH="/opt/bin:$PATH"
-PATH="/opt/coverity/bin:$PATH"
-PATH="/opt/letsencrypt/bin:$PATH"
-PATH="$HOME/bin:$PATH"
+[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
+[ -d "/opt/bin" ] && PATH="/opt/bin:$PATH"
+# MacPorts Installer addition: adding an appropriate PATH variable for use with MacPorts.
+[ -d "/opt/local/bin" ] && PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+test -n "$(which keyvhain)" && eval `keychain --eval --agents ssh`
+test -n "$(which fortune)" && fortune -s
 export PATH
-echo ""
-[ -d /usr/share/games/fortunes ] && /usr/games/fortune 
-eval `keychain --eval --agents ssh`
 export EDITOR=vim
 export VISUAL=vim
