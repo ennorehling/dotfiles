@@ -10,8 +10,10 @@ fi
 [ -d "/opt/bin" ] && PATH="/opt/bin:$PATH"
 # MacPorts Installer addition: adding an appropriate PATH variable for use with MacPorts.
 [ -d "/opt/local/bin" ] && PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+[ -d "/opt/local/man" ] && MANPATH="/opt/local/man:$MANPATH"
 test -n "$(which keychain)" && eval `keychain --eval --agents ssh`
 test -n "$(which fortune)" && fortune -s
 export PATH
+export MANPATH
 export EDITOR=vim
 export VISUAL=vim
