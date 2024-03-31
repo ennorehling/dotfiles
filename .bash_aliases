@@ -3,7 +3,7 @@ alias ta='tmux attach || tmux'
 alias mc='mc -X -u'
 alias ..='cd ..'
 alias ll='ls -l'
-alias dir='ls --color=auto -lAh'
+alias dir='ls -G -lAh'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias tinker='php artisan tinker'
 umask 0077
