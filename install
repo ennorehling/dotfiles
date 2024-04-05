@@ -5,7 +5,9 @@ DIRNAME=$(dirname "$REALPATH")
 
 pushd ~ > /dev/null
 for file in .dircolors .gitconfig .jedrc .plan .vimrc .tmux.conf .gdbinit ; do
-	ln -sf "$DIRNAME/$file" .
+  if [ ! -f "$file" ] ; then
+    ln -sf "$DIRNAME/$file" .
+  fi
 done
 ln -sf $DIRNAME/.bash_* .
 
